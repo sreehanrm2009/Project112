@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Readex+Pro&display=swap" rel="stylesheet">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <title>Hand Gesture Web App</title>
+</head>
+
+<body>
+      <center>
+            <div class="btn btn-info heading_div">
+                  GESTURE WEB APP
+                  <br>
+                  <span>&#9755;</span>
+                  <span>&#9996;</span>
+                  <span>&#9995;</span>
+                  <span>&#128076;</span>
+                  <span>&#9754;</span>
+            </div>
+            <hr>
+            <h2>Take a selfie of a gesture to know about it's meaning.</h2>
+            <br>
+            <p>The model is trained on the following gestures.</p>
+            <br>
+            <h2>&#128076; | &#128077; | &#9996;</h4>
+            <hr>
+            <h5 class="label">Webcam View - </h5>
+            <div id="camera" class="holder_div"></div>
+            <button class="btn btn-success" onclick="capture()">Capture Image</button>
+            <hr>
+            <h5 class="label">Prediction - </h5>
+            <br>
+            <p id="prediction_name"></p>
+            <br>
+            <p id="prediction_emoji"></p>
+            <br>
+            <hr>
+            <h5 class="label">Snapshot - </h5>
+            <div id="snapshot" class="holder_div"></div>
+            <button class="btn btn-warning" onclick="predict()">Predict Emotion</button>
+      </center>
+      <script src="main.js"></script>
+</body>
+
+</html>
